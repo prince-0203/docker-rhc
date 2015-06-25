@@ -1,6 +1,6 @@
 # Variables
 # Could be override from commandline 
-IMAGE_NAME = ecarre/rhc
+IMAGE_NAME = ecarre/rhc-install
 DATA_CONTAINER = rhc-data
 
 .PHONY: all build clean help
