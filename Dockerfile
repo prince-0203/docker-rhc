@@ -8,7 +8,7 @@ RUN	yum update -y && \
 		rubygem-parseconfig \
 		git \
 		ssh \
-		zip && \
+		zip \
 		unzip && \
 	gem install rhc && \
 	gem update rhc
