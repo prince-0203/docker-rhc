@@ -9,6 +9,7 @@ RUN	yum update -y && \
 		git \
 		ssh \
 		zip && \
+		unzip && \
 	gem install rhc && \
 	gem update rhc
 
