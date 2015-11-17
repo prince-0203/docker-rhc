@@ -13,4 +13,4 @@ RUN	yum update -y && \
 	gem install rhc && \
 	gem update rhc
 
-CMD ["help"]
+CMD ["bash"]
