@@ -1,16 +1,9 @@
-FROM centos:centos7
-MAINTAINER Emmanuel CARRE <emmanuel.b.carre@gmail.com>
+FROM ubuntu:latest
+MAINTAINER prince (https://github.com/prince-0203)
 
-RUN	yum update -y && \
-	yum install -y ruby \
-		rubygem \
-		rubygem-json \
-		rubygem-parseconfig \
-		git \
-		ssh \
-		zip \
-		unzip && \
-	gem install rhc && \
-	gem update rhc
+RUN apt-get update -y && \
+    apt-get install ruby-full git-core -y && \
+    apt-get clean -y
 
-CMD ["bash"]
+RUN gem install rhc && \
+    gem update rhc
