@@ -1,5 +1,4 @@
-FROM ubuntu:latest
-MAINTAINER prince (https://github.com/prince-0203)
+FROM ubuntu:16.04
 
 RUN apt-get update -y && \
     apt-get install ruby-full git-core -y && \
@@ -7,3 +6,5 @@ RUN apt-get update -y && \
 
 RUN gem install rhc && \
     gem update rhc
+
+CMD ["bash"]
