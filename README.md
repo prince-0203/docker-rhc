@@ -1,5 +1,5 @@
 # docker-rhc
-[![Build Status](https://travis-ci.org/prince-0203/docker-rhc.svg?branch=master)](https://travis-ci.org/prince-0203/docker-rhc)
+[![Build Status](https://travis-ci.org/prince0203/docker-rhc.svg?branch=master)](https://travis-ci.org/prince0203/docker-rhc)
 
 ## What is rhc
 
