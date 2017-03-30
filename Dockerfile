@@ -1,10 +1,8 @@
-FROM ubuntu:16.04
+FROM ruby:2.4-alpine
 
-RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends ruby-full git-core && \
-    apt-get clean -y
+RUN apk add --no-cache git openssh && \
+    apk cache clean
 
-RUN gem install rhc && \
-    gem update rhc
+RUN gem install rhc
 
 CMD ["bash"]
